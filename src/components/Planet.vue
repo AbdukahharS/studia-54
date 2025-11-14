@@ -31,15 +31,15 @@ onMounted(() => {
     }
   )
   gsap.fromTo(
-    '#planet .img-container',
+    '#planet .img-container animate-container',
     { y: 450 },
     {
       y: 0,
       duration: 2,
       ease: 'cubic-bezier(.455, .03, .515, .955)',
       scrollTrigger: {
-        trigger: '#planet p',
-        start: 'top 55%',
+        trigger: '#planet .img-container',
+        start: 'top 60%',
       },
     }
   )
@@ -52,8 +52,8 @@ onMounted(() => {
       delay: 0.5,
       ease: 'cubic-bezier(.455, .03, .515, .955)',
       scrollTrigger: {
-        trigger: '#planet p',
-        start: 'top 55%',
+        trigger: '#planet .img-container',
+        start: 'top 60%',
       },
     }
   )
@@ -72,7 +72,9 @@ onMounted(() => {
       Studia 54, including celebrities, renowned designers, and architects
     </p>
     <div class="img-container">
-      <img :src="planetImg" alt="Planet Image" />
+      <div class="animate-container">
+        <img :src="planetImg" alt="Planet Image" />
+      </div>
     </div>
   </section>
 </template>
