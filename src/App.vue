@@ -2,6 +2,7 @@
 import { onMounted, ref } from 'vue'
 import gsap from 'gsap'
 import NavBar from './components/NavBar.vue'
+import Planet from './components/Planet.vue'
 import heroVideo from './assets/hero.mp4'
 import poster from './assets/hero-poster.webp'
 import logo from './assets/logo-small.svg'
@@ -75,6 +76,7 @@ const toggleChat = () => {
       <img :src="chatIcon" alt="Chat Icon" />
     </button>
   </div>
+  <Planet />
 </template>
 
 <style scoped>
