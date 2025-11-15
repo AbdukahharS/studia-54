@@ -4,7 +4,7 @@ import gsap from 'gsap'
 // Components
 import NavBar from './components/NavBar.vue'
 import Planet from './components/Planet.vue'
-import Architecture from './components/Architecture.vue'
+import Services from './components/Services.vue'
 // Assets
 import heroVideo from './assets/hero.mp4'
 import poster from './assets/hero-poster.webp'
@@ -80,7 +80,7 @@ const toggleChat = () => {
     </button>
   </div>
   <Planet />
-  <Architecture />
+  <Services />
 </template>
 
 <style scoped>
