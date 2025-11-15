@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import gsap from 'gsap'
+// Components
 import NavBar from './components/NavBar.vue'
 import Planet from './components/Planet.vue'
+import Architecture from './components/Architecture.vue'
+// Assets
 import heroVideo from './assets/hero.mp4'
 import poster from './assets/hero-poster.webp'
 import logo from './assets/logo-small.svg'
@@ -77,6 +80,7 @@ const toggleChat = () => {
     </button>
   </div>
   <Planet />
+  <Architecture />
 </template>
 
 <style scoped>
@@ -223,9 +227,6 @@ const toggleChat = () => {
             height: 16px;
           }
         }
-      }
-
-      .content {
       }
     }
   }
